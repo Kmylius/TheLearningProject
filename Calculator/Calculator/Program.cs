@@ -30,34 +30,29 @@ namespace Calculator
             Console.WriteLine("");
             string result = Console.ReadLine();
 
-            if (result == "1")
+            switch (result)
             {
+                case "1":
                 Addition();
                 return true;
-            }
-            else if (result == "2")
-            {
+
+                case "2":
                 Subtraction();
                 return true;
-            }
-            else if (result == "3")
-            {
+
+                case "3":
                 Multiplication();
                 return true;
-            }
-            else if (result == "4")
-            {
+
+                case "4":
                 Division();
                 return true;
-            }
-            else if (result == "5")
-            {
+
+                case "5":
                 return false;
+
             }
-            else
-            {
-                return true;
-            }
+            return false;
 
         }
 
