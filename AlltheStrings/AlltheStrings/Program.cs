@@ -20,7 +20,7 @@ namespace AlltheStrings
             //string myString = string.Format("Phone Number {0:(###) ###-####}",6022911044);
 
             //string myString = " That summer we took threes across the board  ";
-            // myString = myString.Substring(6, 14);
+            //myString = myString.Substring(6, 14);
             //myString = myString.ToUpper();
             //myString = myString.Replace(" ", "--");
             //myString = String.Format("Length before: {0} -- Length after: {1}", myString.Length, myString.Trim().Length);
