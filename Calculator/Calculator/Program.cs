@@ -21,11 +21,13 @@ namespace Calculator
         {
             Console.Clear();
             Console.WriteLine("Calculator: Please choose a function");
+            Console.WriteLine("");
             Console.WriteLine("1) Addition");
             Console.WriteLine("2) Subtraction");
             Console.WriteLine("3) Multiplication");
             Console.WriteLine("4) Division");
             Console.WriteLine("5) Exit");
+            Console.WriteLine("");
             string result = Console.ReadLine();
 
             if (result == "1")
@@ -59,52 +61,85 @@ namespace Calculator
 
         }
 
-        public static string Addition(string one, string two)
+        public static int Sum(int num1, int num2)
         {
-            int iOne = 0;
-            int iTwo = 0;
+            int total;
+            total = num1 + num2;
+            return total;
+        }
+
+        public static void Addition()
+        {
             Console.Clear();
             Console.WriteLine("Welcome to the Addition Page!");
+            Console.WriteLine("");
             Console.Write("Please write the first number you wish to add: ");
-            string userInput1 = Console.ReadLine();
+            int n1 = Convert.ToInt32(Console.ReadLine());
             Console.Write("Please write the second number you wish to add: ");
-            string userInput2 = Console.ReadLine();
-
-            Int32.TryParse(userInput1,out iOne);
-            Int32.TryParse(userInput2, out iTwo);
-            return (iOne + iTwo).ToString();
+            int n2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("The total is : {0}", Sum(n1, n2));
+            Console.ReadLine();
 
 
         }
 
+        public static int Sum2(int num1, int num2)
+        {
+            int total;
+            total = num1 - num2;
+            return total;
+        }
         private static void Subtraction()
         {
             Console.Clear();
             Console.WriteLine("Welcome to the Subtraction Page!");
+            Console.WriteLine("");
             Console.Write("Please write the first number you wish to subtract: ");
-            string userInput1 = Console.ReadLine();
+            int n1 = Convert.ToInt32(Console.ReadLine());
             Console.Write("Please write the second number you wish to subtract: ");
-            string userInput2 = Console.ReadLine();
+            int n2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("The total is : {0}", Sum2(n1, n2));
+            Console.ReadLine();
         }
 
+
+        public static int Sum3(int num1, int num2)
+        {
+            int total;
+            total = num1 * num2;
+            return total;
+        }
         private static void Multiplication()
         {
             Console.Clear();
             Console.WriteLine("Welcome to the Multiplication Page!");
+            Console.WriteLine("");
             Console.Write("Please write the number you wish to multiply: ");
-            string userInput1 = Console.ReadLine();
+            int n1 = Convert.ToInt32(Console.ReadLine());
             Console.Write("Please write the second number you wish to multiply: ");
-            string userInput2 = Console.ReadLine();
+            int n2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("The total is : {0}", Sum3(n1, n2));
+            Console.ReadLine();
         }
 
+
+        private static int Sum4(int num1, int num2)
+        {
+            int total;
+            total = num1 / num2;
+            return total;
+        }
         private static void Division()
         {
             Console.Clear();
             Console.WriteLine("Welcome to the Division Page!");
+            Console.WriteLine("");
             Console.Write("Please write the first number you wish to divide: ");
-            string userInput1 = Console.ReadLine();
+            int n1 = Convert.ToInt32(Console.ReadLine());
             Console.Write("Please write the second number you wish to divide: ");
-            string userInupt2 = Console.ReadLine();
+            int n2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("The total is : {0}", Sum4(n1, n2));
+            Console.ReadLine();
         }
     }
 }
