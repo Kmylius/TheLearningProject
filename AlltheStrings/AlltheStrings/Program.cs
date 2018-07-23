@@ -10,6 +10,7 @@ namespace AlltheStrings
     {
         static void Main(string[] args)
         {
+            //string myString = "I'm amazing";
             //string myString = "my \"so-called\" life";
             //string myString = "What if I need a \n new line of code";
             //string myString = @"Go to your c:\ drive";
