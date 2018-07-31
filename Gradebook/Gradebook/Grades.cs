@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +23,20 @@ namespace Gradebook
 
         }
 
+        public void WriteGrades(TextWriter textWriter)
+        {
+            textWriter.WriteLine("Grades");
+
+            int i = 0;
+            while (i < grades.Count)
+            {
+                textWriter.WriteLine(grades[i]);
+                i++;
+            }
+
+            textWriter.WriteLine("***********");
+        }
+
         public GradeStatistics ComputeStatistics()
         {
             GradeStatistics stats = new GradeStatistics();
@@ -38,6 +53,7 @@ namespace Gradebook
             stats.AverageGrade= sum/grades.Count();
             return stats;
         }
+
 
         List<float> grades;
     }
