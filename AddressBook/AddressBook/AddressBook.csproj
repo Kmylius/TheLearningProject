@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{89D6DAC6-1AF4-4AF3-A12B-9086E592A8B0}</ProjectGuid>
+    <ProjectGuid>{ABA1AFCB-254E-4430-B669-B258E6C491F4}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>AlltheStrings</RootNamespace>
-    <AssemblyName>AlltheStrings</AssemblyName>
+    <RootNamespace>AddressBook</RootNamespace>
+    <AssemblyName>AddressBook</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,11 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bookOperations.cs" />
+    <Compile Include="MainMenu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Addresses.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
