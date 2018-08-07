@@ -58,6 +58,7 @@ namespace AddressBook
 
                 case "3":
                     Console.Clear();
+                    addressBook.AddToBook();
                     return true;
 
                 case "4":
